@@ -1,0 +1,275 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
+	;
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: relative;
+}
+
+nav {
+	width: 100%;
+	background-color: #1557245c;
+	padding: 10px 0;
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: #1557245c;
+	padding: 10px 0;
+	text-align: right;
+	z-index: 10; /* Asegura que el nav esté por encima de la imagen */
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 80px; /* Ajusta este valor según sea necesario */
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.banner {
+	position: relative;
+}
+
+.banner-img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner-button {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	z-index: 5; /* Asegura que el botón esté por encima de la imagen */
+}
+
+main {
+	padding: 20px 0; /* Ajustar el padding si es necesario */
+}
+
+.container {
+	max-width: 1200px; /* Ajusta este valor según sea necesario */
+	margin: 0 auto;
+	padding: 0 20px; /* Espacio a los lados dentro del contenedor */
+}
+
+.gallery, .cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.gallery-item, .card {
+	width: 32%; /* Ajusta este valor según sea necesario */
+}
+
+.gallery-item img, .card a {
+	width: 100%;
+	height: auto;
+}
+
+.image-caption {
+	margin-top: 10px; /* Espacio entre la imagen y el texto */
+	font-family: "Mulish", sans-serif;
+	line-height: 150%;
+	font-style: normal;
+}
+
+.image-caption strong {
+	font-weight: bold; /* Poner en negrilla la primera palabra */
+}
+
+.card {
+	text-align: center;
+	padding: 40px 0;
+	color: white;
+	cursor: pointer;
+}
+
+.card:nth-child(1) {
+	background-color: #2c3e50;
+}
+
+.card:nth-child(2) {
+	background-color: #95a5a6;
+}
+
+.card:nth-child(3) {
+	background-color: #34495e;
+}
+
+.card a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	height: 100%;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.footer-img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.footer-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Mulish", sans-serif;
+	font-size: 15px;
+}
+/* iniciar sesion*/
+.center {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+	margin: 0;
+}
+
+.espacio {
+	font-family: "Mulish", sans-serif;
+	height: 75vh;
+	margin: 0;
+}
+
+.container1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-box, .register-box {
+	background: linear-gradient(to bottom, #1557245c, #155724d4);
+	padding: 20px;
+	border: 1px solid rgb(255, 255, 255);
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: rgb(255, 255, 255);
+	font-family: "Mulish", sans-serif;
+	text-align: center;
+}
+
+.negro {
+	color: black;
+	font-family: "Mulish", sans-serif;
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #ffffff;
+	font-family: "Mulish", sans-serif;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: calc(100% - 22px);
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #c3e6cb;
+	border-radius: 3px;
+	font-family: "Mulish", sans-serif;
+}
+
+.botonsesion {
+	width: 100%;
+	padding: 10px;
+	background-color: #22352780;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: "Mulish", sans-serif;
+}
+
+button:hover {
+	background-color: #1e4b2af5;
+}
+
+.logo {
+	float: left;
+	width: 200px; /* Cambiado a 300px para hacerlo más grande */
+	display: flex;
+}
+
+.form-center {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px; /* Espacio entre el título y el formulario */
+}
+
+.articulos {
+	margin-top: 20px; /* Espacio entre el formulario y los artículos */
+	text-align: center;
+}
+
+.botoncat {
+	padding: 10px 20px; /* Ajustar relleno para mantener proporción */
+	background-color: #22352780;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: "Mulish", sans-serif;
+}
+.big-textarea {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.articulos table, th,td,tr{
+	border: 1px solid;
+	text-align: justify;
+	
+}
